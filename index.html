@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Magizh's Cafe immersive vegetarian dining experience in Kanpur.">
+    <title>Magizh's Cafe | Immersive Dining Experience</title>
+    <link rel="preload" href="assets/hero-table.png" as="image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="loading" data-mood="south">
+    <div class="preloader" aria-label="Preparing your experience">
+      <div class="draw-line"></div>
+      <div class="loader-logo">
+        <span>M</span>
+        <strong>Magizh's Cafe</strong>
+      </div>
+      <button class="sound-dot" type="button" aria-label="Toggle ambient sound">
+        <span></span><span></span><span></span>
+      </button>
+      <p>Preparing your experience...</p>
+    </div>
+
+    <canvas id="walkCanvas" aria-hidden="true"></canvas>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="top-nav" aria-label="Main navigation">
+      <a class="nav-logo" href="#top" aria-label="Magizh's Cafe home">
+        <span>M</span>
+        <strong>Magizh's Cafe</strong>
+      </a>
+      <nav>
+        <a href="#story">Story</a>
+        <a href="#chef">Chef</a>
+        <a href="#taste">Taste OS</a>
+        <a href="#explore">Explore</a>
+        <a href="#day">Day Flow</a>
+      </nav>
+      <button class="nav-reserve" type="button" data-open-reserve>Reserve</button>
+    </header>
+
+    <aside class="reservation-island" aria-label="Quick actions">
+      <button type="button" data-open-reserve>Reserve</button>
+      <a href="tel:+917607093332">Call</a>
+      <a href="https://maps.google.com/?q=111A%2F8%2C%20Ground%20Floor%2C%20GT%20Road%2C%20Ashok%20Nagar%2C%20Kanpur">Directions</a>
+    </aside>
+
+    <div class="coffee-orbit" aria-hidden="true">
+      <div class="cup">
+        <i></i><i></i><i></i>
+      </div>
+    </div>
+
+    <main>
+      <section class="scene opening" id="top">
+        <div class="kinetic-type">
+          <span>Step</span>
+          <span>inside</span>
+          <span>Magizh's</span>
+        </div>
+        <p class="whisper">Scroll like you are walking through the door.</p>
+      </section>
+
+      <section class="scene threshold">
+        <div class="floating-word word-one">pure veg</div>
+        <div class="floating-word word-two">brass light</div>
+        <div class="floating-word word-three">filter coffee</div>
+        <p class="corner-note">The text moves away. The place comes forward.</p>
+      </section>
+
+      <section class="story-deck" id="story" aria-label="Our Story">
+        <div class="deck-intro">
+          <p>Our Story</p>
+          <h1>Swipe through a cafe memory.</h1>
+        </div>
+        <div class="deck-track">
+          <article class="glass-slide">
+            <img src="assets/interior.png" alt="Warm cafe interior">
+            <div><span>01</span><h2>A bright room on GT Road.</h2><p>Ivory walls, brass warmth, and a mood made for slow conversations.</p></div>
+          </article>
+          <article class="glass-slide">
+            <img src="assets/hero-table.png" alt="South Indian cafe table">
+            <div><span>02</span><h2>South Indian comfort, plated like a ritual.</h2><p>Steam, chutney, crisp edges, and the first sip of filter coffee.</p></div>
+          </article>
+          <article class="glass-slide">
+            <img src="assets/drinks-dessert.png" alt="Cafe drinks and dessert">
+            <div><span>03</span><h2>From lunch plans to late evening cravings.</h2><p>Every visit gets its own rhythm, color, and table story.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="chef-stage" id="chef" aria-label="Chef recommendation">
+        <img src="assets/signature-thali.png" alt="Chef recommended vegetarian thali">
+        <div class="steam-field" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <div class="ingredient i1">ghee roast</div>
+        <div class="ingredient i2">coconut chutney</div>
+        <div class="ingredient i3">tempered sambar</div>
+        <div class="chef-copy">
+          <p>Chef's Recommendation</p>
+          <h2>Magizh Signature Thali</h2>
+          <strong class="price">Rs. 249</strong>
+          <button type="button" data-open-reserve>Reserve this table</button>
+        </div>
+      </section>
+
+      <section class="taste-os" id="taste" aria-label="Interactive taste experience">
+        <div class="taste-head">
+          <p>Taste OS</p>
+          <h2>Tap a craving. Watch the room change.</h2>
+        </div>
+        <div class="chips" role="tablist" aria-label="Food categories">
+          <button class="active" type="button" data-category="south">South Indian</button>
+          <button type="button" data-category="cafe">Cafe Bites</button>
+          <button type="button" data-category="drinks">Drinks</button>
+          <button type="button" data-category="dessert">Dessert</button>
+        </div>
+        <div class="food-stage" aria-live="polite"></div>
+      </section>
+
+      <section class="stories" id="explore" aria-label="Explore our cafe">
+        <div class="story-card tall">
+          <img src="assets/interior.png" alt="Cafe ambience">
+          <div><span>Ambience</span><h2>Golden hour, all day.</h2></div>
+        </div>
+        <div class="story-card">
+          <img src="assets/hero-table.png" alt="Dosa and filter coffee">
+          <div><span>Table</span><h2>The order arrives like a reveal.</h2></div>
+        </div>
+        <div class="story-card">
+          <img src="assets/signature-thali.png" alt="Vegetarian thali">
+          <div><span>Plate</span><h2>One screen. One hero dish.</h2></div>
+        </div>
+        <div class="story-card">
+          <img src="assets/drinks-dessert.png" alt="Drinks and desserts">
+          <div><span>Evening</span><h2>Sweet finish, soft lights.</h2></div>
+        </div>
+      </section>
+
+      <section class="day-timeline" id="day" aria-label="Interactive timeline">
+        <div class="time-copy">
+          <p>Day Flow</p>
+          <h2>One cafe. Four atmospheres.</h2>
+        </div>
+        <div class="time-rail">
+          <button class="active" type="button" data-time="morning">Morning</button>
+          <button type="button" data-time="lunch">Lunch</button>
+          <button type="button" data-time="evening">Evening</button>
+          <button type="button" data-time="dinner">Dinner</button>
+        </div>
+        <div class="time-scene">
+          <img src="assets/hero-table.png" alt="Timeline ambience">
+          <div><span id="timeDish">Filter coffee + mini tiffin</span><strong id="timeMood">Soft daylight, calm tables</strong></div>
+        </div>
+      </section>
+
+      <section class="specials" aria-label="Today's special">
+        <p>Today's Special</p>
+        <h2 id="specialName">Ghee Roast Dosa Flight</h2>
+        <span id="specialMeta">3 chutneys / crisp edge / Rs. 189</span>
+      </section>
+
+      <section class="bubble-zone" aria-label="Guest impressions">
+        <div class="bubble b1">"Feels like a premium app, but for dinner."</div>
+        <div class="bubble b2">"The food reveal made us hungry instantly."</div>
+        <div class="bubble b3">"Not a normal restaurant website."</div>
+        <div class="bubble b4">"Kanpur needs more places like this."</div>
+      </section>
+
+      <section class="final-door">
+        <div>
+          <p>111A/8, Ground Floor, GT Road, Ashok Nagar, Kanpur</p>
+          <h2>Your table is one tap away.</h2>
+        </div>
+        <button type="button" data-open-reserve>Open Reservation</button>
+      </section>
+    </main>
+
+    <dialog class="reserve-modal" id="reserveModal">
+      <form method="dialog">
+        <div class="modal-top">
+          <span>Magizh's Calendar</span>
+          <button value="close" aria-label="Close reservation">x</button>
+        </div>
+        <h2>Reserve a warm table.</h2>
+        <div class="calendar-strip">
+          <button type="button" class="active">Today</button>
+          <button type="button">Sat</button>
+          <button type="button">Sun</button>
+          <button type="button">Mon</button>
+        </div>
+        <div class="time-grid">
+          <button type="button">12:30</button>
+          <button type="button">14:00</button>
+          <button type="button" class="active">19:30</button>
+          <button type="button">21:00</button>
+        </div>
+        <a class="reserve-call" href="tel:+917607093332">Confirm by calling +91 76070 93332</a>
+      </form>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
