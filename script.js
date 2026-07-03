@@ -2,9 +2,9 @@ const body = document.body;
 const canvas = document.getElementById("walkCanvas");
 const ctx = canvas.getContext("2d");
 const hero = new Image();
-hero.src = "assets/interior.png";
+hero.src = " interior.png";
 const table = new Image();
-table.src = "assets/hero-table.png";
+table.src = " hero-table.png";
 
 const state = {
   width: 0,
@@ -18,7 +18,7 @@ const state = {
 
 const menu = {
   south: {
-    image: "assets/signature-thali.png",
+    image: " signature-thali.png",
     items: [
       ["Ghee Roast Dosa", "Fermented batter, podi dust, coconut chutney", "Rs. 169", "520 kcal", "Medium", "12 min", "Filter coffee", "Chef Choice"],
       ["Mini Tiffin Ritual", "Idli, vada, pongal, sambar, kesari", "Rs. 219", "690 kcal", "Mild", "15 min", "Rose milk", "Popular"],
@@ -26,7 +26,7 @@ const menu = {
     ]
   },
   cafe: {
-    image: "assets/hero-table.png",
+    image: " hero-table.png",
     items: [
       ["Paneer Melt Toast", "Herbed paneer, cheese, chilli crisp", "Rs. 189", "610 kcal", "Medium", "11 min", "Cold coffee", "Popular"],
       ["Masala Fries Bowl", "Curry leaf dust, house dip, lemon", "Rs. 129", "540 kcal", "Hot", "9 min", "Mint cooler", "Snack Star"],
@@ -34,7 +34,7 @@ const menu = {
     ]
   },
   drinks: {
-    image: "assets/drinks-dessert.png",
+    image: " drinks-dessert.png",
     items: [
       ["Brass Filter Coffee", "Strong decoction, frothy milk, jaggery note", "Rs. 89", "120 kcal", "None", "6 min", "Kesari", "Signature"],
       ["Rose Milk Float", "Chilled rose, basil seed, vanilla crown", "Rs. 129", "240 kcal", "None", "5 min", "Mini vada", "Popular"],
@@ -42,7 +42,7 @@ const menu = {
     ]
   },
   dessert: {
-    image: "assets/drinks-dessert.png",
+    image: " drinks-dessert.png",
     items: [
       ["Kesari Gold", "Ghee, saffron, cashew, warm semolina", "Rs. 109", "330 kcal", "None", "8 min", "Filter coffee", "Chef Choice"],
       ["Payasam Cup", "Slow milk, cardamom, toasted nuts", "Rs. 119", "280 kcal", "None", "9 min", "Thali", "Comfort"],
@@ -52,10 +52,10 @@ const menu = {
 };
 
 const timeline = {
-  morning: ["Filter coffee + mini tiffin", "Soft daylight, calm tables", "assets/hero-table.png", "#f8f6f2", "#fff2cf"],
-  lunch: ["Signature thali", "Full plates, brighter energy", "assets/signature-thali.png", "#fffaf1", "#f4d28b"],
-  evening: ["Rose milk + cafe bites", "Cooler tones, easy conversations", "assets/drinks-dessert.png", "#f4fbf8", "#c8eee4"],
-  dinner: ["Dosa flight + sweets", "Golden light, slower finish", "assets/interior.png", "#fff4ec", "#d9b06a"]
+  morning: ["Filter coffee + mini tiffin", "Soft daylight, calm tables", " hero-table.png", "#f8f6f2", "#fff2cf"],
+  lunch: ["Signature thali", "Full plates, brighter energy", " signature-thali.png", "#fffaf1", "#f4d28b"],
+  evening: ["Rose milk + cafe bites", "Cooler tones, easy conversations", " drinks-dessert.png", "#f4fbf8", "#c8eee4"],
+  dinner: ["Dosa flight + sweets", "Golden light, slower finish", " interior.png", "#fff4ec", "#d9b06a"]
 };
 
 const specials = [
